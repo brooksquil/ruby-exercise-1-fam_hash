@@ -16,13 +16,9 @@ Krista is my sister and is 42 years old
 
 
 my_family = {
-    :sister1 => {
+    :sister => {
         :name => 'Danielle',
         :age => '44'
-    },
-    :sister2 =>{
-        :name => 'Jeanine',
-        :age => '47'
     },
     :niece => {
         :name => 'Lexi',
@@ -34,7 +30,14 @@ my_family = {
     }
 }
 
+my_family.each do |k, v|
+ 
+    puts "#{v[:name]} is my #{k} and is #{v[:age]}-years-old."
+    
+end
 
+
+# Other tries 
 # my_family.each do |key, value|
 #     puts key
 #     value.values.each do |v|
@@ -42,11 +45,11 @@ my_family = {
 #     end
 #   end
 
-  my_family.each do |key, value|
-    # puts key
-    value.each do |k,v|
-    #   puts k
-    fam = v
-      puts "#{fam} is"
-    end
-  end
+#   my_family.each do |key, value|
+#     # puts key
+#     value.each do |k1, v1|
+#     #   puts k
+#     fam = v1
+#       puts "#{fam}"
+#     end
+#   end
